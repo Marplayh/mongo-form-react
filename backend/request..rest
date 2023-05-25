@@ -1,0 +1,30 @@
+POST http://localhost:3100/api/clientes
+Content-Type: application/json
+
+{
+    "name": "Yasmine",
+    "email": "yasmine@gmail.com",
+    "data_nascimento": "1991-02-22",
+    "sexo": "Feminino",
+    "raca": "Branco"
+}
+
+###
+
+GET http://localhost:3100/api/clientes
+
+###
+GET http://localhost:3100/api/clientes/646cf72db8ad117d7176e8f5
+###
+DELETE  http://localhost:3100/api/clientes/646cf72db8ad117d7176e8f5
+###
+PUT  http://localhost:3100/api/clientes/646cf72db8ad117d7176e8f5
+Content-Type: application/json
+
+{
+    "name": "Yasmine Martins",
+    "email": "yasmine@gmail.com",
+    "data_nascimento": "1991-02-22",
+    "sexo": "Feminino",
+    "raca": "Branco"
+}
